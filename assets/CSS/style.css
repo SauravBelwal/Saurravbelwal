@@ -448,7 +448,7 @@
  /* ===================== SKILLS ======================= */
 
  .skills_container{
-   row-gap: 0;
+   margin: auto;
  }
 
  .skills_header{
@@ -760,7 +760,7 @@
    transform: translateX(.25rem);
  }
 
- /* .swiper-button-next::after,
+ .swiper-button-next::after,
  .swiper-button-prev::after{
   display: none;
   
@@ -785,7 +785,7 @@
 
  .swiper-pagination-bullets .swiper-pagination-bullet{
   background-color: var(--first-color);
- } */
+ }
 
   
  

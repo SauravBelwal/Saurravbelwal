@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/CSS/style.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="assets/CSS/swiper-bundle.min.css">
     <title>SaurravBelwal</title>
 </head>
 <body>
@@ -171,7 +172,7 @@
             <span class="section_subtitle">My Technical Level</span>
 
             <!-- =================SKILL 1================= -->
-            <div class="skills_container container grid">
+            <div class="skills_container container">
                 <div>
                     <div class="skills_content skills_open">
                         <div class="skills_header">
@@ -276,8 +277,7 @@
                             </div>
                         </div>
                     </div>
-
-                      <!-- =========================== SKILLS 3 ==================== -->
+                    <!-- =========================== SKILLS 3 ==================== -->
                      <div class="skills_content skills_close">
                         <div class="skills_header">
                             <i class="uil uil-swatchbook skills_icon"></i>
@@ -320,8 +320,6 @@
                            
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </section>
@@ -607,11 +605,10 @@
             <h2 class="section_title">Portfolio</h2>
             <span class="section_subtitle">Most recent work</span>
 
-            <div class="portfolio_container container  ">
-                <div>
-                    
+            <div class="portfolio_container container swiper">
+                <div class="swiper-wrapper">
                      <!-- ====================================PORTFOLIO 1 =========================== -->
-                     <div class="porfolio_content grid  ">
+                     <div class="porfolio_content grid swiper-slide">
                         <img src="img/portfolio1.jpg" alt="" class="portfolio_img">
 
                         <div class="portfolio_data">
@@ -625,7 +622,7 @@
                         </div>
                      </div>
                      <!-- ====================================PORTFOLIO 2 =========================== -->
-                     <div class="porfolio_content grid  ">
+                     <div class="porfolio_content grid swiper-slide">
                         <img src="img/portfolio2.jpg" alt="" class="portfolio_img">
 
                         <div class="portfolio_data">
@@ -639,7 +636,7 @@
                         </div>
                      </div>
                      <!-- ====================================PORTFOLIO 3 =========================== -->
-                     <div class="porfolio_content grid  ">
+                     <div class="porfolio_content grid swiper-slide">
                         <img src="img/portfolio3.jpg" alt="" class="portfolio_img">
 
                         <div class="portfolio_data">
@@ -652,11 +649,10 @@
                                 </a>
                         </div>
                      </div>
-                    
-
                 </div>
-                    
-                                           
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>       
                
                 </div>
              
@@ -890,11 +886,7 @@
 
     </main>
 
+    <script src="assets/JS/swiper-bundle.min.js"></script>
     <script src="assets/JS/app.js"></script>
-  
-
-
-    
-
 </body>
 </html>

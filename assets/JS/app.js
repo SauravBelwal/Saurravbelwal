@@ -1,9 +1,4 @@
- 
-
-
 /*================MENU SHOW============ */
-
-
 const navMenu = document.getElementById('nav-menu'),
       navToggle = document.getElementById('nav-toggle');
       navClose = document.getElementById('nav-close')
@@ -33,26 +28,6 @@ const navMenu = document.getElementById('nav-menu'),
            navMenu.classList.remove('show-menu')
          }
            navLink.forEach(n => n.addEventListener('click', linkAction))
-
-           /*====================ACCORDION SKILLS =======================*/
-        //    const skillsContent = document.getElementsByClassName('skills_content'),
-        //          skillsHeader = document.querySelectorAll('.skills_header')
-
-        //    function toggleSkills(){
-        //     let itemClass = this.parentNode.className
-        //     for(i = 0; i < skillsContent.length; i++){
-        //         skillsContent[i].className = 'skills_content skills_close'
-        //      }
-        //      if(itemClass === 'skills_content skills_close'){
-        //         this.parentNode.className = 'skills_Content skills_open'
-        //      }
-            
-        //    }
-
-        //    skillsHeader.forEach((el) => {
-        //     el.addEventListener('click', toggleSkills)
-
-        //    })
 
         const skillsContent = document.getElementsByClassName("skills_content");
         const skillsHeader = document.querySelectorAll(".skills_header");
@@ -115,23 +90,23 @@ const navMenu = document.getElementById('nav-menu'),
 
 
         /*============================ PORTFOLIO SWIPER ============================== */
-        //  const swiper = new Swiper('.portfolio_container', {
-        //       // Optional parameters
-              
-        //       loop: true,
+         const swiper = new Swiper('.portfolio_container', {
+              // Optional parameters
+       
+              loop: true,
 
-        //       // If we need pagination
-        //       pagination: {
-        //          el: '.swiper-pagination',
-        //      },
+              // If we need pagination
+              pagination: {
+                 el: '.swiper-pagination',
+             },
 
-        //      // Navigation arrows
-        //      navigation: {
-        //           nextEl: '.swiper-button-next',
-        //           prevEl: '.swiper-button-prev',
-        //      },
-            
-        // });
+             // Navigation arrows
+             navigation: {
+                  nextEl: '.swiper-button-next',
+                  prevEl: '.swiper-button-prev',
+             },
+     
+        });
 
     //         var swiper = new Swiper(".portfolio_container", {
     //   cssMode: true,
@@ -158,7 +133,7 @@ const navMenu = document.getElementById('nav-menu'),
         sections.forEach(current =>{
         const sectionHeight = current.offsetHeight
         const sectionTop = current.offsetTop - 50;
-        sections = current.getAttribute('id')
+        sections = current.getAttribute('id');
 
         if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
             document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.add('active-link')

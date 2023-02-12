@@ -630,7 +630,8 @@
    display: block;
  }
 
- .qualification_button.quaification_active{
+
+ .qualification_active.qualification_active{
    color: var(--first-color);
  }
 

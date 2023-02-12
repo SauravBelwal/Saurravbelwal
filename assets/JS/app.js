@@ -55,8 +55,7 @@ const navMenu = document.getElementById('nav-menu'),
                     tabContent.classList.remove('qualification_active')
                 })
                 target.classList.add('qualification_active')
-
-                tab.forEach(tab =>{
+                tabs.forEach(tab =>{
                     tab.classList.remove('qualification_active')
                 })
 
@@ -133,7 +132,7 @@ const navMenu = document.getElementById('nav-menu'),
         sections.forEach(current =>{
         const sectionHeight = current.offsetHeight
         const sectionTop = current.offsetTop - 50;
-        sections = current.getAttribute('id');
+        let sectionId = current.getAttribute('id');
 
         if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
             document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.add('active-link')

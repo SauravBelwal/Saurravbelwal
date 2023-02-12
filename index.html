@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/CSS/style.css">
-    <link rel="stylesheet" href="assets/CSS/swiper-bundle.min.css">   
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <title>SaurravBelwal</title>
 </head>
@@ -57,6 +56,8 @@
             </div>
 
             <div class="nav_btns">
+                <!-- Theme Change Button -->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
                 <div class="nav_toggle" id="nav-toggle">
                     <i class="uil uil-apps"></i>
                 </div>
@@ -338,7 +339,7 @@
                         Education
                     </div>
                     
-                    <div class="qualification_button button--flexl" data-target="#work">
+                    <div class="qualification_button button--flex" data-target="#work">
                         <i class="uil uil-briefcase-alt qualification_icon"></i>
                         Work
                     </div>
@@ -430,9 +431,7 @@
                           </div>
                           <!-- ================================QUALIFICATION  2 ==================================== -->
                           <div class="qualification_data">
-                            
-
-                              
+                         
 
 
                             <div>
@@ -608,11 +607,11 @@
             <h2 class="section_title">Portfolio</h2>
             <span class="section_subtitle">Most recent work</span>
 
-            <div class="portfolio_container container swiper">
-                <div class="swiper-wrapper">
+            <div class="portfolio_container container  ">
+                <div>
                     
                      <!-- ====================================PORTFOLIO 1 =========================== -->
-                     <div class="porfolio_content grid swiper-slide">
+                     <div class="porfolio_content grid  ">
                         <img src="img/portfolio1.jpg" alt="" class="portfolio_img">
 
                         <div class="portfolio_data">
@@ -626,7 +625,7 @@
                         </div>
                      </div>
                      <!-- ====================================PORTFOLIO 2 =========================== -->
-                     <div class="porfolio_content grid swiper-slide">
+                     <div class="porfolio_content grid  ">
                         <img src="img/portfolio2.jpg" alt="" class="portfolio_img">
 
                         <div class="portfolio_data">
@@ -640,7 +639,7 @@
                         </div>
                      </div>
                      <!-- ====================================PORTFOLIO 3 =========================== -->
-                     <div class="porfolio_content grid swiper-slide">
+                     <div class="porfolio_content grid  ">
                         <img src="img/portfolio3.jpg" alt="" class="portfolio_img">
 
                         <div class="portfolio_data">
@@ -656,18 +655,8 @@
                     
 
                 </div>
-                     <!-- Add Arrows -->
-                      <div class="swiper-button-next">
-                    <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
-                </div>
-                <div class="swiper-button-prev">
-                    <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
-
-                </div>
-
-                     <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
-                            
+                    
+                                           
                
                 </div>
              
@@ -685,7 +674,7 @@
                             <i class="uil uil-message project_icon button_icon"></i>
                         </a>
                     </div>
-                    <img src="img/project.png" alt="" class="project_image">
+                    <img src="img/project.png" alt="" class="project_img">
                 </div>
             </div>
         </section>
@@ -697,10 +686,10 @@
             <h2 class="section_title">Testimonial</h2>
             <span class="section_subtitle">My client saying</span>
 
-            <div class="testimonial_container container swiper">
-                <div class="swiper-wrapper">
+            <div class="testimonial_container container ">
+                <div class="">
          <!-- ==================================TESTIMONIAL 1 ====================================== -->
-                    <div class="testimonial_content swiper-slide">
+                    <div class="testimonial_content ">
                         <div class="testimonial_data">
                             <div class="testimonial_header">
                                 <img src="img/testimonial1.jpg" alt="" class="testimonial_img">
@@ -725,7 +714,7 @@
                         
                     </div>
          <!-- ==================================TESTIMONIAL 2 ====================================== -->
-                    <div class="testimonial_content swiper-slide">
+                    <div class="testimonial_content ">
                         <div class="testimonial_data">
                             <div class="testimonial_header">
                                 <img src="img/testimonial2.jpg" alt="" class="testimonial_img">
@@ -750,7 +739,7 @@
                         
                     </div>
          <!-- ==================================TESTIMONIAL 3 ====================================== -->
-                    <div class="testimonial_content swiper-slide">
+                    <div class="testimonial_content ">
                         <div class="testimonial_data">
                             <div class="testimonial_header">
                                 <img src="img/testimonial3.jpg" alt="" class="testimonial_img">
@@ -776,8 +765,7 @@
                     </div>                   
                 </div>
 
-                   <!-- Add Pagination -->
-                <div class="swiper-pagination swiper-pagitation-testimonial"></div>
+                   
                 </div>
             </div>
         </section>
@@ -882,9 +870,9 @@
                         <a href="https://www.facebook.com/" target="_blank" class="footer_social">
                             <i class="uil uil-facebook-f"></i>
                         </a>
-                        <a href="https://www.instagram.com/" target="_blank" class="footer_social">
+                        <!-- <a href="https://www.instagram.com/" target="_blank" class="footer_social">
                             <i class="uil uil-instagram"></i>
-                        </a>
+                        </a> -->
                         <a href="https://twitter.com/" target="_blank" class="footer_social">
                             <i class="uil uil-twitter-alt"></i>
                         </a>
@@ -902,7 +890,11 @@
 
     </main>
 
-    <script type="module" src="assets/JS/swiper-bundle.min.js"></script>   
     <script src="assets/JS/app.js"></script>
+  
+
+
+    
+
 </body>
 </html>
